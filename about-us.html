@@ -206,4 +206,28 @@
     </footer>
     
 </body>
+<script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "80%";
+    }
+
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+
+    var dropdown = document.getElementsByClassName("subnavbtn");
+    var i;
+
+    for (i = 0; i < dropdown.length; i++) {
+        dropdown[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var dropdownContent = this.nextElementSibling;
+            if (dropdownContent.style.display === "grid") {
+                dropdownContent.style.display = "none";
+            } else {
+                dropdownContent.style.display = "grid";
+            }
+        });
+    }
+</script>
 </html>
