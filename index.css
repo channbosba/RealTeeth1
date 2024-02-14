@@ -94,7 +94,7 @@ body {
     }
     .overlay .navbar a {
         float: left;
-        font-size: 15px;
+        font-size: 16px;
         color: black;
         padding: 14px 16px;
         text-decoration: none;
@@ -106,7 +106,7 @@ body {
     }
     
     .overlay .subnav .subnavbtn {
-        font-size: 15px;
+        font-size: 16px;
         border: none;
         outline: none;
         color: black;
@@ -168,7 +168,7 @@ body {
         border-radius: 5px;
         background-color: #213E99;
         color: white;
-        font-size: 13px;
+        font-size: 16px;
         padding: 2%;
         width: 90%;
         margin: 0 5%;
@@ -357,7 +357,7 @@ body {
         border: 1px solid #213d9954;
         border-radius: 5px;
         background-color: white;
-        font-size: 13px;
+        font-size: 16px;
     }
     
     .book-App:hover {
@@ -434,12 +434,12 @@ body {
         /* background-color: #333; */
         width: 100%;
         display: flex;
-        justify-content: end;
+        justify-content: space-between;
     }
     
     .navbar a {
         float: left;
-        font-size: 15px;
+        font-size: 16px;
         color: black;
         padding: 14px ;
         text-decoration: none;
@@ -451,7 +451,7 @@ body {
     }
     
     .subnav .subnavbtn {
-        font-size: 15px;
+        font-size: 16px;
         border: none;
         outline: none;
         color: black;
@@ -470,7 +470,7 @@ body {
     .subnav-content {
         display: none;
         position: absolute;
-        left: 45%;
+        left: 38%;
         background-color: white;
         min-width: 50%;
         z-index: 1;
