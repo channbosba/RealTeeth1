@@ -14,7 +14,54 @@
     background-position-y: bottom;
     background-attachment: fixed;
 } */
+.whoarewe h3{
+    color: #213E99;
+    padding: 20px 0;
+}
+.mySlide img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container1 {
+    position: relative;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.3;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
 
+  .text-dtail ul li{
+    list-style-type: circle;
+    list-style: none;
+  }
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) {
     .cont-right {
@@ -236,36 +283,6 @@
         /* background-color: aqua; */
     }
 
-    .whoarewe h2 {
-        color: #213E99;
-    }
-
-    .member {
-        width: 100%;
-        display: block;
-       
-        /* background: #213E99; */
-    }
-    .member-item {
-        width: 100%;
-        height: 220px;
-        /* background-color: #818181; */
-        padding: 20px;
-        align-items: center;
-        display: block;
-        text-align: center;
-    }
-
-    .member-item img {
-        width: 120px;
-        height: 55%;
-        background-color: rgba(227, 228, 239, 0.492);
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    .member-item h4{
-        color: #213E99;
-    }
     .share {
         width: 100%;
         height: 100%;
@@ -614,72 +631,7 @@
         color: #213E99;
     }
 
-    .member {
-        /* width: 90%; */
-        display: grid;
-        /* gap: 10px; */
-        /* background: #213E99; */
-        padding: 10px;
-        grid-template-areas: 'first-member first-member first-member first-member'
-            'second-member second-member third-member third-member';
-    }
 
-    .member-item {
-        width: 100%;
-        height: 220px;
-        /* background-color: #818181; */
-        padding: 20px;
-        align-items: center;
-        display: block;
-        text-align: center;
-
-    }
-    .member-item p {
-        font-size: 14px;
-    }
-
-    .member-item h4 {
-        font-size: 15px;
-        color: #213E99;
-    }
-
-    .member-item img {
-        width: 110px;
-        height: 55%;
-        background-color: rgba(227, 228, 239, 0.492);
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    .item1 {
-        width: 100%;
-        grid-area: first-member;
-    }
-
-    .item1 img {
-        width: 15%;
-        height: 60%;
-    }
-
-    .item2 img {
-        width: 30%;
-
-    }
-
-    .item3 img {
-        width: 30%;
-
-    }
-
-    .item2 {
-        width: 100%;
-        grid-area: second-member;
-    }
-
-    .item3 {
-        width: 100%;
-        grid-area: third-member;
-    }
 
     .share {
         width: 100%;
@@ -1016,73 +968,9 @@
         color: #213E99;
     }
 
-    .member {
-        display: grid;
-        /* gap: 10px; */
-        /* background: #213E99; */
-        padding: 10px;
-        grid-template-areas: 'first-member first-member first-member first-member'
-            'second-member second-member third-member third-member';
-    }
 
-    .member-item {
-        width: 100%;
-        height: 220px;
-        /* background-color: #818181; */
-        padding: 20px;
-        align-items: center;
-        display: block;
-        text-align: center;
 
-    }
-
-    .member-item p {
-        font-size: 14px;
-    }
-
-    .member-item h4 {
-        font-size: 15px;
-        color: #213E99;
-    }
-
-    .member-item img {
-        width: 120px;
-        height: 55%;
-        background-color: rgba(227, 228, 239, 0.492);
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    .item1 {
-        width: 100%;
-        grid-area: first-member;
-    }
-
-    .item1 img {
-        width: 15%;
-        height: 60%;
-    }
-
-    .item2 img {
-        width: 30%;
-
-    }
-
-    .item3 img {
-        width: 30%;
-
-    }
-
-    .item2 {
-        width: 100%;
-        grid-area: second-member;
-    }
-
-    .item3 {
-        width: 100%;
-        grid-area: third-member;
-    }
-
+    
     .share {
         width: 23%;
         height: 100%;

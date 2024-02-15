@@ -14,7 +14,63 @@
     background-position-y: bottom;
     background-attachment: fixed;
 } */
-
+.whoarewe {
+    width: 73%;
+    height: 100%;
+    /* background-color: aqua; */
+    margin-bottom: 4%;
+}
+.whoarewe a{
+    text-decoration: none;
+}
+.boxx{
+    width: 33.33%;
+    height: 350px;
+    /* background-color: #213E99; */
+    border-radius: 8px;
+    border: 1px solid gainsboro;
+}
+.top-image{
+    width: 100%;
+    height: 50%;
+}
+.top-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px 8px 0 0;
+}
+.infoo{
+    width: 100%;
+    height: 500%;
+    padding: 4%;
+}
+.infoo h3, pre{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: black;
+    margin-top: 2%;
+}
+.infoo h3{
+    font-size: 15px;
+}
+.infoo pre{
+    font-size: 12px;
+}
+.infoo p{
+    font-size: 11px;
+    color: grey;
+}
+.infoo .textp{
+    width: 26%;
+    text-align: center;
+    background-color: gainsboro;
+    border-radius: 2px;
+}
+.whoarewe .infoo:hover p,h3{
+    color: #213E99;
+}
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) {
     .cont-right {
@@ -235,36 +291,8 @@
         height: 100%;
         /* background-color: aqua; */
     }
-
-    .whoarewe h2 {
-        color: #213E99;
-    }
-
-    .member {
+    .boxx{
         width: 100%;
-        display: block;
-       
-        /* background: #213E99; */
-    }
-    .member-item {
-        width: 100%;
-        height: 220px;
-        /* background-color: #818181; */
-        padding: 20px;
-        align-items: center;
-        display: block;
-        text-align: center;
-    }
-
-    .member-item img {
-        width: 120px;
-        height: 55%;
-        background-color: rgba(227, 228, 239, 0.492);
-        border-radius: 4px;
-        cursor: pointer;
-    }
-    .member-item h4{
-        color: #213E99;
     }
     .share {
         width: 100%;
@@ -609,77 +637,10 @@
         height: 100%;
         /* background-color: aqua; */
     }
-
-    .whoarewe h2 {
-        color: #213E99;
+    .boxx{
+        width: 50%;
     }
 
-    .member {
-        /* width: 90%; */
-        display: grid;
-        /* gap: 10px; */
-        /* background: #213E99; */
-        padding: 10px;
-        grid-template-areas: 'first-member first-member first-member first-member'
-            'second-member second-member third-member third-member';
-    }
-
-    .member-item {
-        width: 100%;
-        height: 220px;
-        /* background-color: #818181; */
-        padding: 20px;
-        align-items: center;
-        display: block;
-        text-align: center;
-
-    }
-    .member-item p {
-        font-size: 14px;
-    }
-
-    .member-item h4 {
-        font-size: 15px;
-        color: #213E99;
-    }
-
-    .member-item img {
-        width: 110px;
-        height: 55%;
-        background-color: rgba(227, 228, 239, 0.492);
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    .item1 {
-        width: 100%;
-        grid-area: first-member;
-    }
-
-    .item1 img {
-        width: 15%;
-        height: 60%;
-    }
-
-    .item2 img {
-        width: 30%;
-
-    }
-
-    .item3 img {
-        width: 30%;
-
-    }
-
-    .item2 {
-        width: 100%;
-        grid-area: second-member;
-    }
-
-    .item3 {
-        width: 100%;
-        grid-area: third-member;
-    }
 
     .share {
         width: 100%;
@@ -1005,84 +966,11 @@
         margin-bottom: 10%;
         margin-top: 5%;
     }
-
-    .whoarewe {
-        width: 73%;
-        height: 100%;
-        /* background-color: aqua; */
+    .boxx{
+        width: 33.33%;
     }
-
-    .whoarewe h2 {
-        color: #213E99;
-    }
-
-    .member {
-        display: grid;
-        /* gap: 10px; */
-        /* background: #213E99; */
-        padding: 10px;
-        grid-template-areas: 'first-member first-member first-member first-member'
-            'second-member second-member third-member third-member';
-    }
-
-    .member-item {
-        width: 100%;
-        height: 220px;
-        /* background-color: #818181; */
-        padding: 20px;
-        align-items: center;
-        display: block;
-        text-align: center;
-
-    }
-
-    .member-item p {
-        font-size: 14px;
-    }
-
-    .member-item h4 {
-        font-size: 15px;
-        color: #213E99;
-    }
-
-    .member-item img {
-        width: 120px;
-        height: 55%;
-        background-color: rgba(227, 228, 239, 0.492);
-        border-radius: 4px;
-        cursor: pointer;
-    }
-
-    .item1 {
-        width: 100%;
-        grid-area: first-member;
-    }
-
-    .item1 img {
-        width: 15%;
-        height: 60%;
-    }
-
-    .item2 img {
-        width: 30%;
-
-    }
-
-    .item3 img {
-        width: 30%;
-
-    }
-
-    .item2 {
-        width: 100%;
-        grid-area: second-member;
-    }
-
-    .item3 {
-        width: 100%;
-        grid-area: third-member;
-    }
-
+    
+    
     .share {
         width: 23%;
         height: 100%;
