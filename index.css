@@ -194,7 +194,7 @@ body {
     footer .footer1 a {
         text-decoration: none;
         color: #ddd;
-        padding: 0 30px;
+        /* padding: 0 30px; */
         font-size: 13px;
     }
     
@@ -204,7 +204,7 @@ body {
         background-color: hsl(226, 65%, 36%);
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         position: fixed;
         bottom: 0;
     }

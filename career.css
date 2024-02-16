@@ -311,11 +311,11 @@
     }
 
     .recentnews a .imagenews {
-        width: 15%;
+        width: 23%;
         height: 100%;
     }
     .recentnews a .text {
-        width: 82%;
+        width: 75%;
         height: 100%;
         display: block;
     }
@@ -345,7 +345,7 @@
         color: black;
     }
     .followpage{
-        width: 50%;
+        width: 70%;
         height: 160px;
         background-color: #213E99;
         margin-top: 10%;
@@ -399,7 +399,7 @@
     footer .footer1 a {
         text-decoration: none;
         color: #ddd;
-        padding: 0 30px;
+        /* padding: 0 30px; */
         font-size: 13px;
     }
 
@@ -409,7 +409,7 @@
         background-color: hsl(226, 65%, 36%);
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: space-evenly;
         position: fixed;
         bottom: 0;
     }
