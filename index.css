@@ -39,11 +39,9 @@ body {
         display: flex;
         align-items: center;
     }
-
     header .cont-left img {
-        width: 25%;
+        width: 15%;
     }
-
     header span {
         margin-left: 25px;
         display: inline-block;
@@ -51,10 +49,8 @@ body {
         font-size: 15px;
         font-weight: 600;
     }
-
     .overlay {
         height: 100%;
-        width: 0;
         position: fixed;
         z-index: 1;
         top: 0;
@@ -63,7 +59,6 @@ body {
         overflow-x: hidden;
         transition: 0.5s;
     }
-
     .overlay a {
         padding: 8px;
         text-decoration: none;
@@ -80,21 +75,26 @@ body {
     }
     .overlay .navbar {
         overflow: hidden;
-        background-color: #ebebeb;
+        background-color: #e9edf278;
         width: 90%;
         margin: 5%;
         display: grid;
-        border: 2px solid #8080803d;
+        border: 2px solid #e8f4ff80;
         border-radius: 5px;
 
     }
-    .overlay img{
-        width: 25%;
-        margin: 5% 0 0 25%;
+    .overlay .img {
+        width: 100%;
+        display: block;
+        /* background-color: #213E99; */
+    }
+    .overlay .img img{
+        width: 20%;
+        margin-left: 35%;
     }
     .overlay .navbar a {
         float: left;
-        font-size: 16px;
+        font-size: 15px;
         color: black;
         padding: 14px 16px;
         text-decoration: none;
@@ -106,7 +106,8 @@ body {
     }
     
     .overlay .subnav .subnavbtn {
-        font-size: 16px;
+        font-size: 15px;
+        width: 100%;
         border: none;
         outline: none;
         color: black;
@@ -114,7 +115,8 @@ body {
         background-color: inherit;
         font-family: inherit;
         margin: 0;
-        /* display: grid; */
+        display: flex;
+        justify-content: space-between;
     }
     
     .navbar a:hover,
@@ -130,7 +132,7 @@ body {
         position: absolute;
         /* left: 45%; */
         background-color: white;
-        min-width: 50%;
+        min-width: 89%;
         z-index: 1;
         border-radius: 5px;
         border: 1px solid #7071735f;
@@ -147,22 +149,6 @@ body {
         color: black;
         border-radius: 5px;
     }
-/*     
-    .subnav:hover #service {
-        display: grid;
-        grid-template-columns: auto ;
-    }
-    
-    .subnav:hover #about {
-        display: grid;
-        grid-template-columns: auto;
-    }
-    
-    .subnav:hover #technology {
-        display: grid;
-        grid-template-columns: auto ;
-    } */
-    
     .book-App {
         border: 1px solid #7895f554;
         border-radius: 5px;
@@ -176,7 +162,7 @@ body {
     }
     .small-device .language {
         width: 100%;
-        height: 35%;
+        height: auto;
         display: flex;
         justify-content: center;
         margin-top: 3%;
@@ -210,161 +196,196 @@ body {
     }
 
 }
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-/* @media only screen and (max-width: 1000px) 
-{
-    .navbar a {
-        font-size: 10px;
-    }
-    .subnav .subnavbtn{
-        font-size: 10px;
-    }
-} */
-
-/* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
-    .container {
-        padding: 10px 60px;
-    }
     header .container {
         width: 100%;
-        height: 190px;
-        background-color: white;
+        height:  188.69px;
+        background-color: rgb(255, 255, 255);
         display: block;
-        justify-content: space-between;
-        padding-left: 8%;
+        justify-content: space-evenly;
+        padding: 10px 60px;
+        position: absolute;
+        z-index: 1;
     }
     
     header .cont-left {
-        width: 100%;
+        width: 306.42px;
+        height: 79.69px;
         /* background-color: aqua; */
         display: flex;
         align-items: center;
+        color: #213E99;
+        font-size: 14px;
+        font-weight: 600;
     }
-    
     header .cont-left img {
-        width: 10%;
+        max-width: 30%;
     }
     
     header span {
         margin-left: 25px;
         display: inline-block;
-        color: #213E99;
-        font-size: 16px;
-        font-weight: 600;
+       
     }
     
     header .cont-right {
-        width: 99%;
+        width: 100%;
+        font-size: 10px;
+        height: 90px;
         /* background-color: blueviolet; */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
     }
-    
     .language {
         width: 100%;
         height: 35%;
-        display: flex;
+        display:flex;
         justify-content: end;
+        align-items: center;
     }
     
     .language img {
         width: 30px;
         height: 18px;
-        margin: 5px;
+        margin: 0 5px;
         object-fit: cover;
     }
     
     .navbar {
+        /* position: relative; */
         overflow: hidden;
-        /* background-color: #333; */
+        /* background-color: #e19a9a; */
         width: 100%;
+        height: 50%;
         display: flex;
+        align-items: center;
         justify-content: space-between;
+        /* margin: 20px 0; */
     }
     
     .navbar a {
         float: left;
-        font-size: 13px;
+        /* text-align: center; */
+        font-size: 15px;
         color: black;
-        padding: 14px 16px;
         text-decoration: none;
+        padding: 5px 5px;
     }
-    
     .subnav {
         float: left;
         overflow: hidden;
+        height: 70%;
+        /* background-color: #213E99; */
+        
+    }
+    .subnav li{
+        cursor: pointer;
+        list-style: none;
+        padding: 0 15px;
+        /* width: 200px; */
+        height: 100%;
     }
     
     .subnav .subnavbtn {
-        font-size: 13px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 15px;
         border: none;
         outline: none;
         color: black;
-        padding: 14px 16px;
+        /* padding: 5px 50px; */
         background-color: inherit;
         font-family: inherit;
         margin: 0;
     }
-    
     .navbar a:hover,
     .subnav:hover .subnavbtn {
-        background-color: #eee;
+        background-color: #e9f1f9;
         border-radius: 5px;
+        /* padding: 10px 15px; */
     }
     
     .subnav-content {
         display: none;
         position: absolute;
-        left: 8%;
+        left: 5%;
         background-color: white;
-        min-width: 50%;
+        max-width:55%;
         z-index: 1;
         border-radius: 5px;
         border: 1px solid #7071735f;
+        padding: 10px;
+        box-shadow: 0px 3px 3px 3px #b1b1b147;
     }
     
     .subnav-content a {
         float: left;
         color: black;
         text-decoration: none;
+        padding: 10px;
     }
-    
+    .subnav-content a p{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        color: #818181;
+        font-size: 13px;
+    }
     .subnav-content a:hover {
         background-color: #eee;
         color: black;
         border-radius: 5px;
     }
-    
     .subnav:hover #service {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(3,minmax(0,1fr));
         transition: 0.3s;
     }
     
     .subnav:hover #about {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: repeat(1,minmax(0,1fr));
         transition: 0.3s;
     }
     
     .subnav:hover #technology {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2,minmax(0,1fr));
         transition: 0.3s;
     }
     
     .book-App {
-        border: 1px solid #213d9954;
+        border: 1px solid #213d9954;  
         border-radius: 5px;
         background-color: white;
-        font-size: 16px;
+        font-size: 15px;
+        padding: 5px 5px;
+        margin: 0;
     }
     
     .book-App:hover {
         background-color: #89a3f82e;
         border: 1px solid #89a3f82e;
     }
+    footer .footer a {
+        text-decoration: none;
+        color: #ddd;
+        padding: 0 30px;
+    }
     
+    footer .footer {
+        width: 100%;
+        height: 40px;
+        background-color: hsl(226, 65%, 36%);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+    }
     
     footer .footer {
         display: none;
@@ -379,47 +400,51 @@ body {
 }
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1200px) {
-    .container {
-        padding: 10px 60px;
-    }
     header .container {
         width: 100%;
-        height: 100px;
-        background-color: white;
+        height: 110px;
+        background-color: rgb(255, 255, 255);
         display: flex;
-        justify-content: space-between;
-    
+        justify-content: space-evenly;
+        padding: 10px 60px;
+        position: absolute;
+        z-index: 1;
     }
     
     header .cont-left {
-        width: 30%;
+        width: 306.42px;
+        height: 79.69px;
         /* background-color: aqua; */
         display: flex;
         align-items: center;
+        color: #213E99;
+        font-size: 14px;
+        font-weight: 600;
     }
-    
     header .cont-left img {
-        width: 25%;
+        max-width: 30%;
     }
     
     header span {
         margin-left: 25px;
         display: inline-block;
-        color: #213E99;
-        font-size: 16px;
-        font-weight: 600;
+       
     }
     
     header .cont-right {
-        width: 65%;
+        width: 850px;
+        height: 90px;
         /* background-color: blueviolet; */
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
     }
-    
     .language {
         width: 100%;
         height: 35%;
-        display: flex;
+        display:flex;
         justify-content: end;
+        align-items: center;
     }
     
     .language img {
@@ -430,97 +455,123 @@ body {
     }
     
     .navbar {
+        /* position: relative; */
         overflow: hidden;
-        /* background-color: #333; */
+        /* background-color: #e19a9a; */
         width: 100%;
+        height: 50%;
         display: flex;
-        justify-content: space-between;
+        align-items: center;
+        justify-content: right;
+        /* margin: 20px 0; */
     }
     
     .navbar a {
         float: left;
-        font-size: 16px;
+        /* text-align: center; */
+        font-size: 15px;
         color: black;
-        padding: 14px ;
         text-decoration: none;
+        padding: 5px 25px;
     }
-    
     .subnav {
         float: left;
         overflow: hidden;
+        height: 70%;
+        /* background-color: #213E99; */
+        
+    }
+    .subnav li{
+        cursor: pointer;
+        list-style: none;
+        padding: 0 15px;
+        /* width: 200px; */
+        height: 100%;
     }
     
     .subnav .subnavbtn {
-        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        font-size: 15px;
         border: none;
         outline: none;
         color: black;
-        padding: 14px;
+        /* padding: 5px 50px; */
         background-color: inherit;
         font-family: inherit;
         margin: 0;
     }
-    
     .navbar a:hover,
     .subnav:hover .subnavbtn {
-        background-color: #eee;
+        background-color: #e9f1f9;
         border-radius: 5px;
+        /* padding: 10px 15px; */
     }
     
     .subnav-content {
         display: none;
         position: absolute;
-        left: 38%;
+        left: 35%;
         background-color: white;
-        min-width: 50%;
+        max-width:55%;
         z-index: 1;
         border-radius: 5px;
         border: 1px solid #7071735f;
+        padding: 10px;
+        box-shadow: 0px 3px 3px 3px #b1b1b147;
     }
     
     .subnav-content a {
         float: left;
         color: black;
         text-decoration: none;
+        padding: 10px;
     }
-    
+    .subnav-content a p{
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+        color: #818181;
+        font-size: 13px;
+    }
     .subnav-content a:hover {
         background-color: #eee;
         color: black;
         border-radius: 5px;
     }
-    
     .subnav:hover #service {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(3,minmax(0,1fr));
         transition: 0.3s;
     }
     
     .subnav:hover #about {
         display: grid;
-        grid-template-columns: auto;
+        grid-template-columns: repeat(1,minmax(0,1fr));
         transition: 0.3s;
     }
     
     .subnav:hover #technology {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: repeat(2,minmax(0,1fr));
         transition: 0.3s;
     }
     
     .book-App {
-        border: 1px solid #213d9954;
+        border: 1px solid #213d9954;  
         border-radius: 5px;
         background-color: white;
-        font-size: 13px;
+        font-size: 15px;
+        padding: 5px 25px;
+        margin: 0;
     }
     
     .book-App:hover {
         background-color: #89a3f82e;
         border: 1px solid #89a3f82e;
     }
-    
-    
     footer .footer a {
         text-decoration: none;
         color: #ddd;
@@ -543,4 +594,3 @@ body {
         display: none;
     }
 }
-
