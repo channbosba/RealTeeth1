@@ -76,9 +76,13 @@
 .pagination {
     width: 100%;
     padding: 20px;
-    display: inline-block;
-    margin-bottom: 5%;
+    display: inline;
+    align-items: center;
     /* background-color: #818181; */
+  }
+  .pagination{
+    width: 100%;
+    /* background-color: #213E99; */
   }
   
   .pagination a {
@@ -134,13 +138,14 @@
         font-weight: 600;
     }
     .overlay {
+        width: 75%;
         height: 100%;
         position: fixed;
         z-index: 1;
         top: 0;
         right: 0;
         background-color: rgba(255, 255, 255, 0.993);
-        overflow-x: hidden;
+        display: none;
         transition: 0.5s;
     }
     .overlay a {
@@ -387,11 +392,12 @@
         display: block;
     }
     .recentnews a .imagenews img {
-        width: 95%;
-        height: 90%;
+        max-width: 100%;
+        max-height: 90%;
         object-fit: cover;
         border-radius: 5px;
         margin: 5%;
+        /* margin-left: 5%; */
     }
 
     .recentnews a {
@@ -1070,7 +1076,7 @@
     }
 
     .ourteam {
-        width: 90%;
+        max-width: 1200px;
         height: auto;
         margin: auto;
         /* background-color: #213E99; */

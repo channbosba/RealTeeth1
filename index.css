@@ -50,13 +50,14 @@ body {
         font-weight: 600;
     }
     .overlay {
+        width: 75%;
         height: 100%;
         position: fixed;
         z-index: 1;
         top: 0;
         right: 0;
         background-color: rgba(255, 255, 255, 0.993);
-        overflow-x: hidden;
+        display: none;
         transition: 0.5s;
     }
     .overlay a {
