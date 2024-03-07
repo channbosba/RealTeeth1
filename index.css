@@ -8,11 +8,13 @@
 }
 
 body {
+    width: 100%;
+    min-height: 100vh;
     background-image: url(./image/rtdc-small.webp);
     background-size: cover;
     /* background-repeat: no-repeat; */
-    background-position-y: bottom;
-    background-attachment: fixed;
+    background-position: center bottom;
+    /* background-attachment: fixed; */
 }
 
 .main-box{
@@ -39,7 +41,7 @@ body {
     display: block;
     /* justify-content: space-between; */
     padding: 1.5%;
-    margin-top: 11%;
+    margin-top: 10%;
 }
 .slide .top{
     width: 100%;
