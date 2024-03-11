@@ -1203,7 +1203,7 @@
         background-color: white;
         font-size: 15px;
         padding: 5px 25px;
-        margin: 0;
+        margin-left: 1%;
     }
     
     .book-App:hover {
