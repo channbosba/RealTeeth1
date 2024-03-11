@@ -28,7 +28,7 @@
     text-indent: 0;
     border-color: inherit;
     border-collapse: collapse;
-    color: #5073e3;
+    color: #213E99;
 }
 .whoarewe table tr {
     width: 100%;
@@ -62,12 +62,12 @@
         background-color: white;
     }
     .header {
-        position: absolute;
+        /* position: absolute; */
         width: 100%;
         left: 0;
         top: 0;
         z-index: 99;
-        padding: 15px;
+        /* padding: 5px; */
     }
     ul {
         list-style: none;
@@ -91,7 +91,20 @@
         text-transform: capitalize;
         color: #e91e63;
     }
-    
+    .header .logo{
+        width: 100%;
+        /* height: 100px; */
+        display: flex;
+        align-items: center;
+    }
+    .header .logo img{
+        width: 23%;
+        margin-right: 2%;
+    }
+    .header .logo .name{
+        color: #213E99;
+        font-weight: bolder;
+    }
     .header .nav-menu {
         padding: 0 20px;
     }
@@ -130,13 +143,15 @@
         transform: translate(-50%, -50%) rotate(-90deg);
     }
     
-    .header .menu>.menu-item>.sub-menu>.menu-item>a:hover,
-    .header .menu>.menu-item:hover>a {
+    .header .menu>.menu-item>.sub-menu>.menu-item>a:hover{
         /* color: blue; */
         background-color: #ced6e1a6;
         border-radius: 5px;
         /* margin: 0 10px; */
     
+    }
+    .header .menu>.menu-item:hover>a {
+        color: #213E99;
     }
     
     .header .menu>.menu-item>.sub-menu {
@@ -157,9 +172,8 @@
     }
     
     .header .open-nav-menu {
-        height: 34px;
-        width: 40px;
-        margin-right: 15px;
+        height: 30px;
+        width: 30px;
         display: none;
         align-items: center;
         justify-content: center;
@@ -342,7 +356,9 @@
         }
 
     
-   
+    section .telegram {
+        margin-top: 270px;
+    }
     
     
     
@@ -424,8 +440,8 @@
     }
 
     .share .sharemedia .icon img {
-        width: 6%;
-        padding: 1%;
+        width: 7%;
+        margin: 1%;
     }
 
     .ourfacilities {
@@ -559,6 +575,12 @@
         justify-content: space-evenly;
         padding: 10px 60px;
     }
+    section .telegram {
+        margin-top: 390px;
+    }
+    .header{
+        display: none;
+    }
     
     header .cont-left {
         width: 306.42px;
@@ -663,13 +685,20 @@
         display: none;
         position: absolute;
         left: 5%;
+        margin-top: 7px;
         background-color: white;
-        max-width:70%;
+        max-width:55%;
         z-index: 1;
         border-radius: 5px;
         border: 1px solid #7071735f;
         padding: 10px;
         box-shadow: 0px 3px 3px 3px #b1b1b147;
+    }
+    .big-subnav-content{
+        width: 9%;
+        height: 19%;
+        background-color: none;
+        position: absolute;
     }
     
     .subnav-content a {
@@ -941,7 +970,15 @@
         justify-content: space-evenly;
         padding: 10px 60px;
     }
-    
+    section .telegram {
+        margin-top: 435px;
+    }
+    .big-subnav-content{
+        width: 9%;
+        height: 19%;
+        background-color: none;
+        position: absolute;
+    }
     header .cont-left {
         width: 306.42px;
         height: 79.69px;
@@ -961,7 +998,9 @@
         display: inline-block;
        
     }
-    
+    .header{
+        display: none;
+    }
     header .cont-right {
         width: 850px;
         height: 90px;
@@ -1044,6 +1083,7 @@
         display: none;
         position: absolute;
         left: 35%;
+        margin-top: 7px;
         background-color: white;
         max-width:55%;
         z-index: 1;

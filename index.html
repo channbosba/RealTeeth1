@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="header1">
         <div class="container">
             <div class="cont-left">
                 <img src="image/rtdc-logo.webp" alt="">
@@ -32,6 +32,8 @@
                     <a href="/RealTeeth1/index.html">Home</a>
                     <div class="subnav">
                         <li class="subnavbtn">About Us <i class="fa-solid fa-angle-down"></i></li>
+                        <div class="big-subnav-content">
+                        </div>
                         <div id="about" class="subnav-content">
                             <a href="/RealTeeth1/career.html">Career</a>
                             <a href="/RealTeeth1/about-us.html">Our Professional Team</a>
@@ -42,6 +44,8 @@
                     </div>
                     <div class="subnav">
                         <li class="subnavbtn">Services <i class="fa-solid fa-angle-down"></i></li>
+                        <div class="big-subnav-content">
+                        </div>
                         <div id="service" class="subnav-content">
                             <a href="#">Implantologics
                                 <p>Radiant smiles begin here: Transformative cosmetic dentistry for enduring confidence.
@@ -88,6 +92,8 @@
                     </div>
                     <div class="subnav">
                         <li class="subnavbtn">Technology <i class="fa-solid fa-angle-down"></i></li>
+                        <div class="big-subnav-content">
+                        </div>
                         <div id="technology" class="subnav-content">
                             <a href="#">Sterilization Technologies
                                 <p>Disinfection technology plays a key role in ensuring that dental offices provide a
@@ -109,69 +115,98 @@
                     <button class="book-App">Book Appointment</button>
                 </div>
             </div>
-            <div class="small-device">
-                <div id="myNav" class="overlay">
-                    <div class="img">
-                        <img src="./image/rtdc-logo.webp" alt="">
+        </div>
+    </header>
+    <header class="header">
+        <div class="container">
+            <div class="header-main">
+                <div class="logo">
+                    <img src="image/rtdc-logo.webp" alt="">
+                    <div class="name">
+                        <span>មន្ទីរព្យាបាល រៀលធីស</span><br>
+                        <span>We specilized in smiles</span>
                     </div>
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="navbar">
-                        <a href="/RealTeeth1/index.html">Home</a>
-                        <div class="subnav">
-                            <button class="subnavbtn">
-                                <div class="text1">About us</div> 
-                                <div class="icon1"><i class="fa-solid fa-angle-down"></i></div>
-                            </button>
-                            <div id="about" class="subnav-content">
-                                <a href="/RealTeeth1/career.html">Career</a>
-                                <a href="/RealTeeth1/about-us.html">Our Professional Team</a>
-                                <a href="/RealTeeth1/newsevent.html">News & Events</a>
-                                <a href="/RealTeeth1/facilities.html">Our Facilities</a>
-                                <a href="/RealTeeth1/clientTestimonial.html">Client Testimonial</a>
-                            </div>
+                </div>
+                <div class="open-nav-menu">
+                    <span></span>
+                </div>
+                <div class="menu-overlay">
+                </div>
+                <!-- navigation menu start -->
+                <nav class="nav-menu">
+                    
+                    <div class="close-nav-menu">
+                        <div class="close-icon">
+                            <i class="fa-solid fa-xmark"></i>
                         </div>
-                        <div class="subnav">
-                            <button class="subnavbtn">Services <i class="fa-solid fa-angle-down"></i></button>
-                            <div id="service" class="subnav-content">
-                                <a href="#">Implantologics</a>
-                                <a href="#">Endonotics by Hand</a>
-                                <a href="#">Cosmetic Dentisry</a>
-                                <a href="#">Crown and Bridge</a>
-                                <a href="#">X-Ray</a>
-                                <a href="#">Complete Denture</a>
-                                <a href="#">Consultation</a>
-                                <a href="#">Restorative Dentisry</a>
-                                <a href="#">Orthdontics</a>
-                                <a href="#">Prediatric Dentistry</a>
-                                <a href="#">Appliance in Orthodontic</a>
-                                <a href="#">Surgery And Extraction</a>
-                            </div>
+                        <div class="img">
+                            <img
+                                src="https://realteethclinic.com/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Frtdc-logo.e7cecfed.png&w=96&q=75"
+                                alt="">
                         </div>
-                        <div class="subnav">
-                            <button class="subnavbtn">Technology <i class="fa-solid fa-angle-down"></i></button>
-                            <div id="technology" class="subnav-content">
-                                <a href="#">Sterilization Technologies</a>
-                                <a href="#">INNO Dental Implants</a>
-                                <a href="#">Clear aligner / Invisalign</a>
-                            </div>
-                        </div>
-                        <a href="">Q&A</a>
-                        <a href="">Contact Us</a>
-                       
                     </div>
+                    <ul class="menu">
+                        <li class="menu-item">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">About Us<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="./career.html">Carrer</a></li>
+                                <li class="menu-item"><a href="./about-us.html">Our Professional Team</a></li>
+                                <li class="menu-item"><a href="./newsevent.html">News & Event</a></li>
+                                <li class="menu-item"><a href="./facilities.html">Our Facilities</a></li>
+                                <li class="menu-item"><a href="./clientTestimonial.html">Client Testimonial</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">Service<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu sub-menu1">
+                                <li class="menu-item"><a href="#">Implantologics</a></li>
+                                <li class="menu-item"><a href="#">Endonotics by Hand</a></li>
+                                <li class="menu-item"><a href="#">Cosmetic Dentisry</a></li>
+                                <li class="menu-item"><a href="#">Crown and Bridge</a></li>
+                                <li class="menu-item"><a href="">X-Ray</a></li>
+                                <li class="menu-item"><a href="#">Complete Denture</a></li>
+                                <li class="menu-item"><a href="#">Consultation</a></li>
+                                <li class="menu-item"><a href="#">Restorative Dentisry</a></li>
+                                <li class="menu-item"><a href="#">Orthdonticse</a></li>
+                                <li class="menu-item"><a href="">Prediatric Dentistry</a></li>
+                                <li class="menu-item"><a href="#">Appliance in Orthodontic</a></li>
+                                <li class="menu-item"><a href="">Surgery And Extraction</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item menu-item-has-children">
+                            <a href="#" data-toggle="sub-menu">Technology<i class="fa-solid fa-angle-down"></i></a>
+                            <ul class="sub-menu">
+                                <li class="menu-item"><a href="#">Sterilization Technologies</a></li>
+                                <li class="menu-item"><a href="#">INNO Dental Implants</a></li>
+                                <li class="menu-item"><a href="#">Clear aligner / Invisalign</a></li>
+                            </ul>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Q&A</a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#">Contact Us</a>
+                        </li>
+                    </ul>
                     <button class="book-App">Book Appointment</button><br>
                     <div class="language">
                         <img src="./image/Flag_of_the_United_Kingdom_(1-2).svg.png" alt="">
                         <img src="./image/Flag_of_Cambodia.svg.png" alt="">
                         <img src="./image/Flag_of_the_People's_Republic_of_China.svg (1).png" alt="">
                     </div>
-                </div>
-                <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-                
+                </nav>
+                <!-- navigation menu end -->
             </div>
         </div>
-
     </header>
+    <section>
+        <div style="position: fixed; z-index: 1; width: 100%; height: 90%;" class="telegram">
+            <img style="width: 45px; float: right; margin-right: 2%;" src="./image/Telegram_2019_Logo.svg.webp" alt="">
+        </div>
+    </section>
     <section>
         <div class="main-box">
             <div class="client-test">
@@ -292,28 +327,68 @@
     </footer>
 </body>
 <script>
-   function openNav() {
-        document.getElementById("myNav").style.display = "block";
-    }
+    (() => {
+        const openNavMenu = document.querySelector(".open-nav-menu"),
+            closeNavMenu = document.querySelector(".close-nav-menu"),
+            navMenu = document.querySelector(".nav-menu"),
+            menuOverlay = document.querySelector(".menu-overlay"),
+            mediaSize = 991;
 
-    function closeNav() {
-        document.getElementById("myNav").style.display = "none";
-    }
+        openNavMenu.addEventListener("click", toggleNav);
+        closeNavMenu.addEventListener("click", toggleNav);
+        // close the navMenu by clicking outside
+        menuOverlay.addEventListener("click", toggleNav);
 
-    var dropdown = document.getElementsByClassName("subnavbtn");
-    var i;
+        function toggleNav() {
+            navMenu.classList.toggle("open");
+            menuOverlay.classList.toggle("active");
+            document.body.classList.toggle("hidden-scrolling");
+        }
 
-    for (i = 0; i < dropdown.length; i++) {
-        dropdown[i].addEventListener("click", function () {
-            this.classList.toggle("active");
-            var dropdownContent = this.nextElementSibling;
-            if (dropdownContent.style.display === "grid") {
-                dropdownContent.style.display = "none";
-            } else {
-                dropdownContent.style.display = "grid";
+        navMenu.addEventListener("click", (event) => {
+            if (event.target.hasAttribute("data-toggle") &&
+                window.innerWidth <= mediaSize) {
+                // prevent default anchor click behavior
+                event.preventDefault();
+                const menuItemHasChildren = event.target.parentElement;
+                // if menuItemHasChildren is already expanded, collapse it
+                if (menuItemHasChildren.classList.contains("active")) {
+                    collapseSubMenu();
+                }
+                else {
+                    // collapse existing expanded menuItemHasChildren
+                    if (navMenu.querySelector(".menu-item-has-children.active")) {
+                        collapseSubMenu();
+                    }
+                    // expand new menuItemHasChildren
+                    menuItemHasChildren.classList.add("active");
+                    const subMenu = menuItemHasChildren.querySelector(".sub-menu");
+                    subMenu.style.maxHeight = subMenu.scrollHeight + "px";
+                }
             }
         });
-    }
+        function collapseSubMenu() {
+            navMenu.querySelector(".menu-item-has-children.active .sub-menu")
+                .removeAttribute("style");
+            navMenu.querySelector(".menu-item-has-children.active")
+                .classList.remove("active");
+        }
+        function resizeFix() {
+            // if navMenu is open ,close it
+            if (navMenu.classList.contains("open")) {
+                toggleNav();
+            }
+            // if menuItemHasChildren is expanded , collapse it
+            if (navMenu.querySelector(".menu-item-has-children.active")) {
+                collapseSubMenu();
+            }
+        }
+        window.addEventListener("resize", function () {
+            if (this.innerWidth > mediaSize) {
+                resizeFix();
+            }
+        });
+    })();
 </script>
 
 </html>
