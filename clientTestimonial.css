@@ -1122,9 +1122,9 @@
         padding: 5px 25px;
     }
     .subnav {
-        float: left;
-        overflow: hidden;
-        height: 70%;
+        /* float: left;
+        overflow: hidden; */
+        height: 85%;
         /* background-color: #213E99; */
         
     }

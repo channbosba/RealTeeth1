@@ -28,22 +28,37 @@
     transition: 0.2s;
 }
 .whoarewe p {
+    font-size: 14px;
     color: #818181;
     text-align: center;
-    margin-top: 2%;
+    margin-top: 4%;
 }
 .whoarewe table{
     width: 100%;
     text-indent: 0;
+    font-size: 14px;
     border-color: inherit;
     border-collapse: collapse;
+}
+.whoarewe table th{
     color: #213E99;
+}
+.whoarewe table th,td{
+    padding: 15px 0; 
+}
+.whoarewe table td{
+    border-top: 1px solid rgba(171, 171, 171, 0.661);
+    color: #000000d1;
+    cursor: pointer;
 }
 .whoarewe table tr {
     width: 100%;
     /* background-color: #213E99; */
     /* border: 2px solid #213E99; */
     text-align: left;
+}
+.whoarewe table tr:hover{
+    background-color: #b9c9ff17;
 }
 .whoarewe table tr th:last-child{
     text-align: right;
@@ -1054,9 +1069,9 @@
         padding: 5px 25px;
     }
     .subnav {
-        float: left;
-        overflow: hidden;
-        height: 70%;
+        /* float: left;
+        overflow: hidden; */
+        height: 85%;
         /* background-color: #213E99; */
         
     }
