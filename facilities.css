@@ -14,6 +14,15 @@
     background-position-y: bottom;
     background-attachment: fixed;
 } */
+.subnav li i{
+    transition: rotate .3s;
+    font-size: 10px;
+    padding: 4px;
+}
+.subnav li:hover i {
+    rotate:180deg;
+    transition: 0.2s;
+}
 .whoarewe h3{
     color: #213E99;
     padding: 20px 0;
