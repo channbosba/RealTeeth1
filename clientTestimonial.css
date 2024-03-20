@@ -791,18 +791,17 @@ span {
         border-radius: 5px;
         border: 1px solid rgba(154, 218, 247, 0.299);
     }
-
     .dropdown0 {
-        left: -70%;
+        left: -90%;
     }
 
     .dropdown1 {
-        left: -180%;
+        left: -217%;
         min-width: 640px;
     }
 
     .dropdown2 {
-        left: -228%;
+        left: -269%;
         min-width: 600px;
     }
 
@@ -1080,8 +1079,9 @@ span {
 
 
     .header1 .container {
-        width: 100%;
+        max-width: 1500px;
         height: 110px;
+        margin: auto;
         background-color: rgb(255, 255, 255);
         display: flex;
         justify-content: space-evenly;
@@ -1297,11 +1297,11 @@ span {
     }
 
     section .image {
-        width: 100%;
+        max-width: 1300px;
         height: 250px;
         background-color: #213E99;
         position: relative;
-
+        margin: auto;
     }
 
     section .image img {
@@ -1318,6 +1318,7 @@ span {
         font-weight: 600;
         color: #213E99;
     }
+
 
     .ourteam {
         max-width: 1200px;

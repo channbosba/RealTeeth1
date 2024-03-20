@@ -738,18 +738,17 @@ td {
         border-radius: 5px;
         border: 1px solid rgba(154, 218, 247, 0.299);
     }
-
     .dropdown0 {
-        left: -70%;
+        left: -90%;
     }
 
     .dropdown1 {
-        left: -180%;
+        left: -217%;
         min-width: 640px;
     }
 
     .dropdown2 {
-        left: -228%;
+        left: -269%;
         min-width: 600px;
     }
 
@@ -1005,8 +1004,9 @@ td {
 }
 @media only screen and (min-width: 1300px) {
     .header1 .container {
-        width: 100%;
+        max-width: 1500px;
         height: 110px;
+        margin: auto;
         background-color: rgb(255, 255, 255);
         display: flex;
         justify-content: space-evenly;

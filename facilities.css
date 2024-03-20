@@ -32,6 +32,11 @@ span {
     font-weight: 500;
     font-style: normal;
 }
+.text-detail p,li{
+    font-family: "Hanuman", serif;
+    font-weight: 500;
+    font-style: normal;
+}
 .whoarewe h3{
     color: #213E99;
     padding: 20px 0;
@@ -744,18 +749,17 @@ span {
         border-radius: 5px;
         border: 1px solid rgba(154, 218, 247, 0.299);
     }
-
     .dropdown0 {
-        left: -70%;
+        left: -90%;
     }
 
     .dropdown1 {
-        left: -180%;
+        left: -217%;
         min-width: 640px;
     }
 
     .dropdown2 {
-        left: -228%;
+        left: -269%;
         min-width: 600px;
     }
 
@@ -1023,12 +1027,13 @@ span {
     
     
     .header1 .container {
-        width: 100%;
+        max-width: 1500px;
         height: 110px;
+        margin: auto;
         background-color: rgb(255, 255, 255);
         display: flex;
         justify-content: space-evenly;
-        padding: 10px 60px;
+        /* padding: 10px 60px; */
         position: relative;
     }
     .header .container{
@@ -1240,11 +1245,11 @@ span {
     }
 
     section .image {
-        width: 100%;
+        max-width: 1300px;
         height: 250px;
         background-color: #213E99;
         position: relative;
-
+        margin: auto;
     }
 
     section .image img {
