@@ -1033,7 +1033,7 @@ span {
 @media only screen and (min-width: 1300px) {
    
     section .telegram {
-        margin-top: 435px;
+        bottom: -76%;
     }
     
     
