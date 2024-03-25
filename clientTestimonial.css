@@ -73,13 +73,17 @@ span {
 }
 .client-said{
     width: 100%;
-    margin-top: -30px;
-    padding: 0 20px;
+    margin-top: -40px;
+    padding: 10px 20px;
+}
+.client:hover{
+    background-color: #c7d4ff11;
 }
 .client-said h3{
     color: #213E99;
     text-align: center;
-    font-size: 18px;
+    font-size: 16px;
+    padding-bottom: 5px;
 }
 .client-said p{
     /* width: 80%; */
